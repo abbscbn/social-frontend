@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: parseInt(process.env.PORT || "10000", 10), // Render'ın kullanacağı port
-    host: "0.0.0.0", // Uygulamanızın dışarıdan erişilebilir olması için
+    port: parseInt(process.env.PORT || "10000", 10), // String'den sayıya dönüştürme
+    host: "0.0.0.0", // Uygulamanın dışarıdan erişilebilir olması için
   },
 });
