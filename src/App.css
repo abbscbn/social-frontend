@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.label:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgb(245, 239, 239) !important;
+}
