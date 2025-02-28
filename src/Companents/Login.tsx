@@ -27,7 +27,7 @@ function Login() {
   };
 
   const login = async () => {
-    const payload: UserType = {
+    const payload: any = {
       username: username,
       password: password,
     };

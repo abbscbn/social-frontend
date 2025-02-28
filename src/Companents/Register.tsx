@@ -24,7 +24,7 @@ function Register() {
   };
 
   const register = async () => {
-    const payload: UserType = {
+    const payload: any = {
       username: username,
       password: password,
     };

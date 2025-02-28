@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import "./css/login.css";
 import RouterConfig from "./Config/RouterConfig";
@@ -11,14 +11,14 @@ import { UserType } from "./Types/Types";
 import { useLocation } from "react-router-dom";
 
 function App() {
-  const [client, setclient] = useState<UserType>();
+  
   const dispatch = useDispatch();
   const location = useLocation(); // Use useLocation hook to track the URL
   const getCurrentUser = () => {
     const result = localStorage.getItem("currentUser");
     if (result) {
       const currentUser = JSON.parse(result) as UserType;
-      setclient(currentUser);
+      
       dispatch(setCurrentUser(currentUser));
     }
   };
@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       {/* Conditionally render the Navbar */}
-      {(!isLoginPage && !isRegisterPage) && <Navbar />}
+      {!isLoginPage && !isRegisterPage && <Navbar />}
 
       <div className="mainContainer">
         <RouterConfig />

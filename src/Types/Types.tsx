@@ -4,8 +4,8 @@ export interface UserType {
   password: string;
   createTime: Date;
   profilePicture: string;
-  accessToken:string;
-  refleshToken:string;
+  accessToken: string;
+  refleshToken: string;
 }
 export interface PostType {
   id: number;

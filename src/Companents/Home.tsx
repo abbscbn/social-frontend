@@ -43,12 +43,11 @@ function Home() {
                 title={post.title}
                 text={post.text}
                 initial={post.user.username.charAt(0)}
-                userId={post.user.id}
+                userId={post.user.id ? post.user.id : 0}
                 username={post.user.username}
                 postId={post.id}
                 createTime={post.createTime}
                 user={post.user}
-                
               />
             ))}
           </div>

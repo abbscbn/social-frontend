@@ -5,13 +5,11 @@ import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CommentIcon from "@mui/icons-material/Comment";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu, { MenuProps } from "@mui/material/Menu";
@@ -101,16 +99,8 @@ function UserPosts(props: PostType) {
 
   // Option buton kısmı bitiş
 
-  const {
-    title,
-    text,
-    initial,
-    userId,
-    username,
-    postId,
-    createTime,
-    profilePicture,
-  } = props;
+  const { title, text, userId, username, postId, createTime, profilePicture } =
+    props;
   const dateString = createTime;
   const date = new Date(dateString);
 
