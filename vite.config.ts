@@ -8,4 +8,7 @@ export default defineConfig({
     port: parseInt(process.env.PORT || "10000", 10), // String'den sayıya dönüştürme
     host: "0.0.0.0", // Uygulamanın dışarıdan erişilebilir olması için
   },
+  preview: {
+    allowedHosts: ["social-frontend-mh8p.onrender.com", "localhost"],
+  },
 });
