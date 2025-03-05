@@ -35,7 +35,11 @@ function Navbar() {
           >
             <img src={logo} alt="" height={45} width={70} />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, width: "50px" }}
+          >
             Abbas's Social
           </Typography>
           <div>
