@@ -3,12 +3,12 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import "../css/navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../Redux/Store";
 import { setCurrentUser } from "../Redux/AppSlice";
+import logo from "../assets/logo_guncel.png";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -33,10 +33,10 @@ function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            <img src={logo} alt="" height={45} width={70} />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            App Markası
+            Abbas's Social
           </Typography>
           <div>
             {currentUser ? (
