@@ -206,7 +206,7 @@ function Post(props: PostType) {
               <Link to={{ pathname: "/user/" + userId }}>
                 {user.profilePicture ? (
                   <img
-                    src={`http://localhost:8080/uploads/${user.profilePicture}`}
+                    src={`http://backend-social-production.up.railway.app/uploads/${user.profilePicture}`}
                     style={{
                       width: "50px",
                       height: "50px",
@@ -277,7 +277,7 @@ function Post(props: PostType) {
                       <Typography>{comment.user.username}</Typography>
                       <Link to={{ pathname: "/user/" + comment.user.id }}>
                         <img
-                          src={`http://localhost:8080/uploads/${comment.user.profilePicture}`}
+                          src={`http://backend-social-production.up.railway.app/uploads/${comment.user.profilePicture}`}
                           style={{
                             width: "50px",
                             height: "50px",

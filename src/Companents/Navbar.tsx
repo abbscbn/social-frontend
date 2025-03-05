@@ -14,7 +14,6 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { currentUser } = useSelector((state: RootState) => state.app);
- 
 
   const LogOut = () => {
     dispatch(setCurrentUser(null));

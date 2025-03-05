@@ -29,7 +29,6 @@ function NewPost() {
     if (currentUser?.id) {
       const response = await PostService.savePost(currentUser?.id, title, text);
       if (response) {
-        
         navigate("/");
       } else {
         console.log("veri çekilemedi");
