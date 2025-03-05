@@ -106,6 +106,7 @@ function Post(props: PostType) {
 
   const handleLike = async () => {
     if (liked) {
+      Setliked(!liked);
       if (currentUser?.id) {
         await LikeService.removeLike(currentUser?.id, postId);
         const count = await LikeService.getLikeCountByPostId(postId);
@@ -116,6 +117,7 @@ function Post(props: PostType) {
         }
       }
     } else {
+      Setliked(!liked);
       if (currentUser?.id) {
         await LikeService.saveLike(currentUser.id, postId);
         const count = await LikeService.getLikeCountByPostId(postId);
@@ -126,8 +128,6 @@ function Post(props: PostType) {
         }
       }
     }
-
-    Setliked(!liked);
   };
 
   interface ExpandMoreProps extends IconButtonProps {
