@@ -31,13 +31,14 @@ function Navbar() {
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 2, marginRight: "0px", padding: "0px" }}
           >
             <img src={logo} alt="" height={45} width={70} />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
+            fontSize={15}
             sx={{ flexGrow: 1, width: "50px" }}
           >
             Abbas's Social
@@ -46,7 +47,12 @@ function Navbar() {
             {currentUser ? (
               <Button
                 onClick={() => navigate("/newpost")}
-                style={{ marginRight: "5px" }}
+                style={{
+                  marginRight: "5px",
+                  marginLeft: "10px",
+                  padding: "7px",
+                  fontSize: "10px",
+                }}
                 variant="outlined"
                 className="navbarfont"
                 color="inherit"
