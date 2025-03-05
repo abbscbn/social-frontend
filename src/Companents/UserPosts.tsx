@@ -275,7 +275,7 @@ function UserPosts(props: PostType) {
             avatar={
               <Link to={{ pathname: "/user/" + userId }}>
                 <img
-                  src={`http://backend-social-production.up.railway.app/uploads/${profilePicture}`}
+                  src={`https://backend-social-production.up.railway.app/uploads/${profilePicture}`}
                   style={{
                     width: "50px",
                     height: "50px",
@@ -379,7 +379,7 @@ function UserPosts(props: PostType) {
                       <Typography>{comment.user.username}</Typography>
                       <Link to={{ pathname: "/user/" + comment.user.id }}>
                         <img
-                          src={`http://backend-social-production.up.railway.app/uploads/${comment.user.profilePicture}`}
+                          src={`https://backend-social-production.up.railway.app/uploads/${comment.user.profilePicture}`}
                           style={{
                             width: "50px",
                             height: "50px",

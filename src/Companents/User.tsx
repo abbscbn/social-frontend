@@ -72,7 +72,7 @@ function User() {
 
     try {
       await axios.post(
-        `http://http://backend-social-production.up.railway.app/api/upload?userId=${Iduser}`,
+        `https://backend-social-production.up.railway.app/api/upload?userId=${Iduser}`,
         formData,
         {
           headers: {
@@ -126,7 +126,7 @@ function User() {
                 borderRadius: "50%",
                 padding: "10px",
               }}
-              src={`http://backend-social-production.up.railway.app/uploads/${otherUserPic}`}
+              src={`https://backend-social-production.up.railway.app/uploads/${otherUserPic}`}
               alt=""
             />
           </div>
@@ -177,7 +177,7 @@ function User() {
                 borderRadius: "50%",
                 padding: "10px",
               }}
-              src={`http://backend-social-production.up.railway.app/uploads/${otherUserPic}`}
+              src={`https://backend-social-production.up.railway.app/uploads/${otherUserPic}`}
               alt=""
             />
           </div>
